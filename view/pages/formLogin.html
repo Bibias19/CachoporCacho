@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Login do Mundo Encantado | Pequeninos</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container menu">
+        <img src="logo.png" alt="" height="80px">
+        <ul class="list-items">
+            <li><a href="#quem-somos">Quem Somos Nós</a></li>
+        </div>    
+        </ul>
+    </header>
+    <div class="body-main">
+        <div class="container">
+            <h1>Entre na sua conta!</h1>
+            <div class="social-login">
+                <button class="google">
+                    <i class='bx bxl-google'></i>
+                    Usar Google
+                </button>
+                <button class="apple">
+                    <i class='bx bxl-apple'></i>
+                    Usar Apple
+                </button>
+            </div>
+            <div class="divider">
+                <div class="line"></div>
+                <p>Ou</p>
+                <div class="line"></div>
+            </div>
+    
+            <form id="some-form">
+                <label for="email">Email</label>
+                <div class="custome-input">
+                    <input type="email" name="email" id="email" placeholder="Digite seu Email" autocomplete="off">
+                    <i class='bx bx-at'></i>
+                </div>
+                <label for="password">Senha</label>
+                <div class="custome-input">
+                    <input type="password" name="password" id="senha" placeholder="Digite sua Senha">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <button onclick="entrar()" class="login">Entrar</button>
+                <div class="links">
+                    <a href="Senha.html">Esqueceu sua Senha?</a>
+                    <a href="index-cadastro.html">Criar uma nova conta!</a>
+                </div>
+            </form>    
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <div class="flex-container footer">
+            <p>&copy; 2025 Cacho por Cacho</p>
+        </div>
+    </footer>
+</body>
+
+</html>
