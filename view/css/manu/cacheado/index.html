@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacho por Cacho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo Cacho por Cacho">
+            <span>Cacho por Cacho</span>
+        </div>
+        <nav class="menu">
+            <a href="#">Ondulados</a>
+            <a href="#">Cacheados</a>
+            <a href="#">Crespos</a>
+            <a href="#">Em Transição</a>
+        </nav>
+    </header>
+<div class="caixinha-caar" style="background-color: #b3f1ae">
+    <section class="carousel-nav">
+        <h1>CACHEADOS</h1>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="../img/banner 1.png" alt="Banner 1">
+                <img src="../img/banner 3.jpg" alt="Banner 3">
+                <img src="../img/banner 4.jpg" alt="Banner 4">
+                <img src="../img/banner5.jpg" alt="Banner 5">
+                <!-- Cópia para o loop parecer natural -->
+                <img src="../img/banner 1.png" alt="Banner 1 duplicado">
+                <img src="../img/banner 3.jpg" alt="Banner 3 duplicado">
+                <img src="../img/banner 4.jpg" alt="Banner 4 duplicado">
+                <img src="../img/banner5.jpg" alt="Banner  5 duplicado">
+            </div>
+        </div>
+    </section>
+</div>
+    
+<div class="container-geral" style="background-color: #e4ffe1">
+    <!-- Galeria de Cabelos Cacheados -->
+    <section class="galeria">
+        <h2>Cabelos Cacheados</h2>
+        <div class="imagens">
+            <img src="../img/cabelo1.jpeg" alt="Cabelo 1">
+            <img src="../img/cabelo2.jpeg" alt="Cabelo 2">
+            <img src="../img/cabelo3.png" alt="Cabelo 3">
+        </div>
+    </section>
+
+    <!-- finalizacao para cabelo -->
+    <section class="finalizacao">
+        <h2>Finalização para Cabelos Cacheados</h2>
+        <div class="produtos-lista">
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/B9BA7ajAWBw?si=IzFLeeM1bqnxAhfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/-ao-lyvEVTw?si=nL_KfYIk7VojRQnm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/SRvnQWFtxVg?si=e55EnuNHBwZ2tP_u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/hI0ci_qclfM?si=DPBEIhvElWaYGSgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+<div class="container-penteados">
+    <section class="penteados">
+        <h2>Penteados</h2>
+        <div class="produtos-lista">
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/p8Spu4yJ-i8?si=mEJkKDnWDUyTuqZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/zBKYah1CX1o?si=wQOX2LTS798CDtvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/yY7NDDgqU5s?si=eb5gTRSzJe4piOK3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/PxTMRwU58Oo?si=QdI086XMRPcuaXkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+</div>
+</div>
+    <footer class="rodape">
+        <p>&copy; 2025 Cacho por Cacho. Todos os direitos reservados.</p>
+    </footer>
+    
+    
+    <script>
+        const carousel = document.querySelector('.carousel-track');
+        let scrollAmount = 0;
+    
+        function autoScrollCarousel() {
+            if (carousel.scrollWidth - carousel.clientWidth === scrollAmount) {
+                scrollAmount = 0;
+            } else {
+                scrollAmount += carousel.clientWidth;
+            }
+            carousel.scrollTo({
+                top: 0,
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    
+        setInterval(autoScrollCarousel, 3000); // muda a cada 3 segundos
+    </script>
+    
+
+</body>
+</html>
