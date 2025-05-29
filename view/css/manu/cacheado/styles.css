@@ -8,12 +8,12 @@ body {
     font-family: Arial, sans-serif ;
     font-size:26px;
     color: #333;
-    transform: scale(1.2); /* Aumenta tudo em 20% */
+    transform: scale(1.2);
     transform-origin: top left;
 }
 
 .navbar {
-    display: center;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #9ce9a5;
@@ -57,7 +57,6 @@ body {
     color: rgb(109, 108, 108);
 }
 
-/* Carrossel */
 .carousel-nav {
     
     padding: 20px 0;
@@ -100,7 +99,6 @@ body {
 }
 
 
-/* Rodapé */
 .rodape {
     background-color:#9ce9a5;
     text-align: center;
@@ -112,7 +110,6 @@ body {
 }
 
 
-/* Galeria de Cabelos Cacheados */
 .galeria {
     padding: 40px 20px;
    
@@ -135,7 +132,6 @@ body {
     border-radius: 8px;
 }
 
-/* finalizacao */
 .finalizacao{
     padding: 40px 20px;
     margin-bottom: 20px;
