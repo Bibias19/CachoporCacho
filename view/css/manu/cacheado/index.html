@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacho por Cacho</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 
     <header class="navbar">
         <div class="logo">
             <img src="../img/logo.png" alt="Logo Cacho por Cacho">
             <span>Cacho por Cacho</span>
-        </div style="text-align: center;">
+        </div>
         <nav class="menu">
             <a href="#">Ondulados</a>
             <a href="#">Cacheados</a>
@@ -21,7 +20,7 @@
             <a href="#">Em Transição</a>
         </nav>
     </header>
-<div class="caixinha-caar" style="background-color: #fed2e5">
+<div class="caixinha-caar" style="background-color: #b3f1ae">
     <section class="carousel-nav">
         <h1>CACHEADOS</h1>
         <div class="carousel-container">
@@ -39,18 +38,19 @@
     </section>
 </div>
     
-<div class="container-geral" style="background-color: #fff0f6">
+<div class="container-geral" style="background-color: #e4ffe1">
     <section class="galeria">
         <h2>Cabelos Cacheados</h2>
-        <div class="imagens">
-            <img src="../img/cabelo1.jpeg" alt="Cabelo 1">
-            <img src="../img/cabelo2.jpeg" alt="Cabelo 2">
-            <img src="../img/cabelo3.png" alt="Cabelo 3">
-            <img src="../img/IMG_6204.jpeg" alt="Cabelo 4">
-            <img src="../img/IMG_6203.jpeg" alt="Cabelo 5">
-            <img src="../img/IMG_6201.jpeg" alt="Cabelo 6">
+         <div class="carousel-container">
+            <img width="200" height="200" src="../img/cabelo1.jpeg" alt="Cabelo 1">
+            <img width="200" height="200" src="../img/cabelo2.jpeg" alt="Cabelo 2">
+            <img width="200" height="200" src="../img/cabelo3.png" alt="Cabelo 3">
+            <img width="200" height="200" src="../img/IMG_6204.jpeg" alt="Cabelo 4">
+            <img width="200" height="200" src="../img/IMG_6203.jpeg" alt="Cabelo 5">
+            <img width="200" height="200" src="../img/IMG_6201.jpeg" alt="Cabelo 6">
         </div>
     </section>
+>
     <section class="finalizacao">
         <h2>Finalização para Cabelos Cacheados</h2>
         <div class="produtos-lista">
@@ -60,18 +60,26 @@
             <iframe width="200" height="200" src="https://www.youtube.com/embed/hI0ci_qclfM?si=DPBEIhvElWaYGSgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
-<div class="container-penteados">
-    <section class="penteados">
-        <h2>Penteados</h2>
-        <div class="produtos-lista">
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/p8Spu4yJ-i8?si=mEJkKDnWDUyTuqZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/zBKYah1CX1o?si=wQOX2LTS798CDtvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/yY7NDDgqU5s?si=eb5gTRSzJe4piOK3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="200" height="200" src="https://www.youtube.com/embed/PxTMRwU58Oo?si=QdI086XMRPcuaXkK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-</div>
-</div>
+
+<section class="penteados">
+  <h2>Penteados</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="penteados-slides">
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/p8Spu4yJ-i8?si=mEJkKDnWDUyTuqZz" allowfullscreen></iframe></div>
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/zBKYah1CX1o?si=wQOX2LTS798CDtvH" allowfullscreen></iframe></div>
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/yY7NDDgqU5s?si=eb5gTRSzJe4piOK3" allowfullscreen></iframe></div>
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/vLWNInla68c?si=DChQw1XO-TmjDrqZ" allowfullscreen></iframe></div>
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/tSC-IyEMYLQ?si=3COQI4V6yj8L27u5" allowfullscreen></iframe></div>
+      <div class="slide"><iframe width="200" height="200" src="https://www.youtube.com/embed/PxTMRwU58Oo?si=QdI086XMRPcuaXkK" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <div class="botoes">
+    <button onclick="mudarSlidePenteados(-1)">Anterior</button>
+    <button onclick="mudarSlidePenteados(1)">Próximo</button>
+  </div>
+</section>
+
     <footer class="rodape">
         <p>&copy; 2025 Cacho por Cacho. Todos os direitos reservados.</p>
     </footer>
@@ -95,6 +103,23 @@
         }
     
         setInterval(autoScrollCarousel, 3000);
+
+       
+ let indexPenteados = 0;
+
+  function mudarSlidePenteados(direcao) {
+    const track = document.getElementById('penteados-slides');
+    const totalSlides = track.children.length;
+    const slideWidth = 220; // largura de cada slide
+
+    indexPenteados += direcao;
+
+    if (indexPenteados < 0) indexPenteados = totalSlides - 1;
+    if (indexPenteados >= totalSlides) indexPenteados = 0;
+
+    const offset = -indexPenteados * slideWidth;
+    track.style.transform = `translateX(${offset}px)`;
+  }
     </script>
     
 

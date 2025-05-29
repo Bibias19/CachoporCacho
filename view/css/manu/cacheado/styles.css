@@ -8,8 +8,6 @@ body {
     font-family: Arial, sans-serif ;
     font-size:26px;
     color: #333;
-    transform: scale(1.2);
-    transform-origin: top left;
 }
 
 .navbar {
@@ -20,7 +18,15 @@ body {
     padding: 15px 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
+    text-align: center;
 }
+
+.navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
 
 .logo {
     display: flex;
@@ -56,6 +62,7 @@ body {
     background-color: #85d89063;
     color: rgb(109, 108, 108);
 }
+
 
 .carousel-nav {
     
@@ -98,7 +105,6 @@ body {
     }
 }
 
-
 .rodape {
     background-color:#9ce9a5;
     text-align: center;
@@ -108,7 +114,6 @@ body {
     position: relative;
     height: 80px;
 }
-
 
 .galeria {
     padding: 40px 20px;
@@ -131,6 +136,7 @@ body {
     height: auto;
     border-radius: 8px;
 }
+
 
 .finalizacao{
     padding: 40px 20px;
@@ -158,4 +164,32 @@ body {
 .penteados h2{
     margin-left: 20px;
 }
+
+.carousel-wrapper {
+  width: 220px; 
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 220px;
+  box-sizing: border-box;
+}
+
+    
+    .botoes {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
 
