@@ -89,20 +89,20 @@
         const carousel = document.querySelector('.carousel-track');
         let scrollAmount = 0;
     
-        function autoScrollCarousel() {
-            if (carousel.scrollWidth - carousel.clientWidth === scrollAmount) {
-                scrollAmount = 0;
-            } else {
-                scrollAmount += carousel.clientWidth;
-            }
-            carousel.scrollTo({
-                top: 0,
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        }
+        // function autoScrollCarousel() {
+        //     if (carousel.scrollWidth - carousel.clientWidth === scrollAmount) {
+        //         scrollAmount = 0;
+        //     } else {
+        //         scrollAmount += carousel.clientWidth;
+        //     }
+        //     carousel.scrollTo({
+        //         top: 0,
+        //         left: scrollAmount,
+        //         behavior: 'smooth'
+        //     });
+        // }
     
-        setInterval(autoScrollCarousel, 3000);
+        // setInterval(autoScrollCarousel, 3000);
 
        
  let indexPenteados = 0;
@@ -110,7 +110,7 @@
   function mudarSlidePenteados(direcao) {
     const track = document.getElementById('penteados-slides');
     const totalSlides = track.children.length;
-    const slideWidth = 220; // largura de cada slide
+    const slideWidth = 220; 
 
     indexPenteados += direcao;
 
