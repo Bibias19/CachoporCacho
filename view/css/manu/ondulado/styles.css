@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif ;
+    font-size:26px;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ce9a5;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #85d89063;
+    color: rgb(109, 108, 108);
+}
+
+
+.carousel-nav {
+    
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.carousel-nav h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #050505;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scrollCarousel 12s linear infinite;
+}
+
+
+.carousel-track img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.rodape {
+    background-color:#9ce9a5;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    height: 80px;
+    width: 350; 
+}
+
+.galeria {
+    padding: 40px 20px;
+   
+}
+
+.galeria h2 {
+    margin-bottom: 20px;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagens img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.finalizacao{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.produtos h2 {
+    margin-bottom: 20px;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produtos-lista img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.penteados h2{
+    margin-left: 20px;
+}
+.carousel .card img {
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+   
+    @media (max-width: 768px) {
+      .carousel .card img {
+        height: 180px;
+      }
+    }
