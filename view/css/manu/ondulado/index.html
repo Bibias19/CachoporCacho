@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacho por Cacho</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
   <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
   <style></style>
@@ -24,24 +24,26 @@
             <a href="#">Cacheados</a>
             <a href="#">Crespos</a>
             <a href="#">Em Transição</a>
+            <i class="fi fi-br-search"></i>
         </nav>
     </header>
 <div class="caixinha-caar" style="background-color: #b3f1ae">
     <section class="carousel-nav">
         <h1>ONDULADOS</h1>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="../img/banner 1.png" alt="Banner 1">
-                <img src="../img/banner 3.jpg" alt="Banner 3">
-                <img src="../img/banner 4.jpg" alt="Banner 4">
-                <img src="../img/banner5.jpg" alt="Banner 5">
-                <img src="../img/banner 1.png" alt="Banner 1 duplicado">
-                <img src="../img/banner 3.jpg" alt="Banner 3 duplicado">
-                <img src="../img/banner 4.jpg" alt="Banner 4 duplicado">
-                <img src="../img/banner5.jpg" alt="Banner  5 duplicado">
+        <div class="carousel">
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+              <img src="../img/banner 1.png" alt="Banner 1">
             </div>
-        </div>
-    </section>
+             <div class="carousel-item">
+               <img src="../img/banner 3.jpg" alt="Banner 3">
+             </div>
+             <div class="carousel-item">
+               <img src="../img/banner 4.jpg" alt="Banner 4">
+              </div>
+             </div>
+  </div>
+     </section>
 </div>
     
    <section class="cabelos-ondulados">
@@ -373,23 +375,34 @@
     
     
     <script>
-        const carousel = document.querySelector('.carousel-track');
-        let scrollAmount = 0;
-    
-        function autoScrollCarousel() {
-            if (carousel.scrollWidth - carousel.clientWidth === scrollAmount) {
-                scrollAmount = 0;
-            } else {
-                scrollAmount += carousel.clientWidth;
-            }
-            carousel.scrollTo({
-                top: 0,
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-    
-        setInterval(autoScrollCarousel, 3000);
+        let currentIndex = 0;
+   const items = document.querySelectorAll('.carousel-item');
+   const totalItems = items.length;
+ 
+function showItem(index) {
+  items.forEach((item, i) => {
+    item.classList.remove('active');
+    if (i === index) {
+      item.classList.add('active');
+    }
+  });
+}
+ 
+document.querySelector('.carousel-control.next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalItems;
+  showItem(currentIndex);
+});
+ 
+document.querySelector('.carousel-control.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+  showItem(currentIndex);
+});
+ 
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalItems;
+  showItem(currentIndex);
+}, 5000);
 
        
     </script>
