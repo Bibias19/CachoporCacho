@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background: #E99CB2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 10;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #fffbe7;
+    text-decoration: underline;
+}
+
+.btn, .btn-outline-light {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover, .btn-outline-light:hover {
+    background: #fff;
+    color: #E99CB2;
+}
+
+/* Carousel Styles */
+.carousel-custom {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 2rem 0 2rem 0;
+}
+
+.carousel-custom .carousel-slide {
+    display: none;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.7s;
+    opacity: 0;
+}
+
+.carousel-custom .carousel-slide.active {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-custom img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+.carousel-arrow.left { left: 20px; }
+.carousel-arrow.right { right: 20px; }
+
+/* Products Section */
+.products-section {
+    padding: 2rem 0;
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    color: #E99CB2;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    height: 100%;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E99CB2;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: #E99CB2;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #d88ba0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .carousel-custom,
+    .carousel-custom img,
+    .carousel-custom .carousel-slide {
+        height: 300px;
+    }
+
+    .products-section h2 {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+}
+
+.produtos-titulo {
+    text-align: center !important;
+    width: 100%;
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #5a9bf6;
+    letter-spacing: 1px;
+    display: block !important;
+} 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kit para pentear</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+  <header>
+    <img src="../img/logo-site" alt="Logo Cacho por Cacho" class="logo">
+  </header>
+
+  <main>
+    <div class="produto">
+      <img src="../img/cronograma.avif" alt="cremes">
+      <h1>Kit com 3 Cremes Para Pentear: Reconstrução, Nutrição e Brilho Salon Line</h1>
+      <p>De R$ 89,70<br></p>
+      <div class="botoes">
+        <a href="https://www.salonline.com.br/kit-com-3-cremes-para-pentear-reconstrucao-nutricao-e-brilho-salon-line" class="produto-link"><button>comprar</button></a>
+      </div>
+      <p><strong>Tipos de cabelo:</strong> Todos os tipos de cabelo ondulado, cacheado e crespo</p>
+      <p><strong>Necessidades:</strong> Finalização, Umectação, Proteção térmica</p>
+      <p><strong>Benefícios:</strong> Antifrizz, brilho, definição</p>
+    </div>
+
+    <section>
+      <h2>O QUE VOCÊ PRECISA SABER</h2>
+      <p>O Kit Salon Line conta com 3 Cremes Para Pentear de Reconstrução Intensa, Nutrição Reparadora e Brilho Umidificado. Juntos, eles garantem hidratação profunda, controle do frizz, definição e brilho.
+
+Observação: Brinde limitado a 1 unidade por pedido, independente da quantidade de kits adquiridos.</p>
+    </section>
+
+    <section>
+      <h2>PRINCIPAIS ATIVOS</h2>
+      <p><strong>Quais os principais ativos?</strong><br>
+      Quais os principais ativos?
+Creme Para Pentear Reconstrução Intensa
+Óleo de coco: rico em vitaminas para cabelo e ácidos graxos, fortalece os fios e proporciona brilho e maciez extrema.
+Óleo de rícino: rico em ácidos graxos, vitaminas e sais minerais, possui propriedades que restauram e hidratam os fios, além manter o couro cabeludo saudável.
+Arginina: aminoácido presente na queratina, a Arginina ajuda no fortalecimento e reparação dos fios. Atua formando uma película protetora que sela as cutículas, diminuindo a quebra de cabelo, além de garantir brilho extremo.
+
+ 
+
+Creme Para Pentear Nutrição Reparadora Salon Line 1kg
+Óleo de coco: rico em vitaminas essenciais para os cabelos e ácidos graxos, fortalece os fios e proporciona brilho e maciez extrema.
+Óleo de argan: forma uma película protetora que evita a perda de água natural dos fios. Além disso, promove hidratação e nutrição, reparando e fortalecendo os cabelos.
+Azeite de oliva orgânico: hidrata e dá brilho ao cabelo, além de nutrir e regenerar os fios.
+
+ 
+
+Creme Para Pentear Brilho Umidificado Salon Line 1kg
+Óleo de coco: rico em vitaminas e ácidos graxos, fortalece os fios e proporciona brilho e maciez.
+Óleo de Amla: com vitamina C, garante fios tratados profundamente, rejuvenescidos, cabelos nutridos e saudáveis.
+Manteiga de karité: nutre profundamente os fios, garante hidratação extrema aos cabelos, brilho e força.</p>
+    </section>
+
+    <section>
+      <h2>MODO DE USO</h2>
+      <p><strong>Qual a melhor forma de usar?</strong><br>
+      Com os cabelos limpos e úmidos, aplique qualquer um dos cremes para pentear mecha a mecha no comprimento e pontas. Desembarace os fios com um pente de dentes largos e, em seguida, amasse-os iniciando o movimento das pontas até a raiz. Repita o movimento quantas vezes forem necessárias. A aplicação dependerá da quantidade e do comprimento dos fios. Não enxágue.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cacho por Cacho.</p>
+  </footer>
+</body>
+</html>
