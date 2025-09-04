@@ -10,11 +10,13 @@
 <div class="container">
 <aside class="sidebar">
 <div class="logo">
-<img src="logo.png" alt="Logo">
+<img src="logo-Photoroom (1).png" alt="Logo">
 </div>
 <nav>
 <ul>
 <li class="active">INDICADORES</li>
+<li>CATEGORIA</li>
+<li>MARCA</li>
 <li>PRODUTO</li>
 <li>VIDEOS</li>
 <li>BANNERS</li>
@@ -48,6 +50,11 @@
 <div class="card green">
 <p class="number">0</p>
 <p>Lucro</p>
+<button>Cadastre</button>
+</div>
+<div class="card yellow">
+<p class="number">0</p>
+<p>Marca</p>
 <button>Cadastre</button>
 </div>
 </section>
